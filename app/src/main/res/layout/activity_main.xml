@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocel"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/izquierda"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/izq"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/derecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toconnect" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="246dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/derecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logocopy" />
+
+    <Button
+        android:id="@+id/derecha"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="57dp"
+        android:background="@drawable/der"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/izquierda"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/timmana"
+        android:text="Toca en Conectar cuando la pantalla esté lista y luego click en Empezar en la pantalla"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/toconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/toconnect"
+        android:layout_width="124dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="126dp"
+        android:background="@android:color/background_light"
+        android:text="CONECTAR"
+
+        app:layout_constraintBottom_toTopOf="@+id/izquierda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
